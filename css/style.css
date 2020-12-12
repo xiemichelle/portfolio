@@ -1,0 +1,232 @@
+body{ /* Test for this*/
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+  padding: 0;
+  font-size: 16pt; /* test for this! Make all sizes em or rem */
+}
+
+h1{
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+}
+
+h2{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+}
+
+p {
+  padding: 30px;
+  text-align: center; 
+}
+
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:0px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+*:focus{
+  border: 2px solid #dba1cf;
+}
+
+.all-images{
+  display: grid; 
+  grid-template-rows: auto auto auto; 
+  grid-template-columns: auto auto auto; 
+  text-align: center; 
+}
+
+.active{
+  border: 2px dotted #dba1cf; 
+
+}
+.all-images img{
+  width:100%;
+  height: auto;  
+
+}
+form{
+  width: 80%;
+  margin: 0 auto;
+}
+
+input{
+  width:80%;
+}
+
+textarea{
+  width:80%;
+  height: 25vh;
+}
+
+div + label{
+  line-height: 25vh;
+  vertical-align:top;
+}
+footer{
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.flex-container{
+  padding:0; 
+  margin:0; 
+  list-style: none; 
+  -ms-box-orient: horizontal; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+.flex-item img{
+  width: 100%;  
+  height: auto; 
+}
+.homepage-images{
+  text-align: center; 
+  display: grid; 
+  grid-template-rows: auto auto; 
+  grid-template-columns: auto;  
+}
+
+
+/* Navbar */
+header{
+  background: #fff;
+  border-bottom: 15px solid #dba1cf;
+  /*Your  code here again.*/
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.nav_links{
+  /*Your code here again.*/
+  display: grid;  
+  grid-template-rows: auto auto auto auto;
+  text-decoration: none;  
+}
+
+.nav_item a{
+  color: black;
+  text-decoration: none; 
+}
+.nav_item{
+  padding: 10px;
+}
+.nav_item a:hover, a:focus{
+  color: #dba1cf;
+  text-decoration: underline;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+}
+@media screen and (min-width: 750px){
+  .flex-container{
+    flex-wrap: wrap; 
+    flex-direction: row; 
+  }
+
+  .flex-item img{
+    width: 200px; 
+    height: 500px; 
+  }
+  .all-images{
+    display: flex; 
+    grid-template-rows: auto auto auto; 
+    grid-gap: 20px; 
+    grid-template-columns: auto auto; 
+    text-align: center; 
+    padding: 10px; 
+  }
+  .homepage-images{
+    text-align: center; 
+    display: grid; 
+    grid-template-rows: auto auto ; 
+    grid-template-columns: auto;  
+    padding: 10px; 
+  }
+
+
+  /* Navbar */
+  header{
+    /*Your code here again.*/  
+    flex-direction: row; 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+  }
+
+  .nav_links{
+    /*Your code here again.*/ 
+    display: grid; 
+    grid-template-rows: auto auto auto auto; 
+  }
+
+  .nav_item a{
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1050px){
+  .all-images{
+    display: grid; 
+    grid-template-rows: auto auto auto; 
+    grid-gap: 50px; 
+    grid-template-columns: auto auto; 
+    text-align: center; 
+    padding: 30px; 
+  }
+
+  .flex-container{
+    justify-content: space-around; 
+  }
+
+  .flex-item img{
+    width: 500px; 
+    height: 500px; 
+    padding: 70px; 
+
+  }
+  header{
+    justify-content: center; 
+  }
+}
+
+  .homepage-images{
+  text-align: center; 
+  display: grid; 
+  grid-template-rows: auto; 
+  grid-gap: 10px; 
+  grid-template-columns: auto auto;  
+  padding: 10px; 
+}
+
+  img:hover{
+    opacity: 0.5; 
+  }
+
+  fieldset{
+    display: grid; 
+    grid-template-columns: 1fr; 
+  }
+  .nav_links{
+    /*Your code here again.*/ 
+    display: grid; 
+    grid-template-columns: auto auto auto auto; 
+  }
